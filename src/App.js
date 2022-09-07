@@ -1,4 +1,4 @@
-import fortressLogo from './fortress_logo.png'
+import pvbattsLogo from './pvbatts_logo.png'
 import './App.css';
 import React from 'react';
 import { useRef, useState, useEffect} from 'react';
@@ -197,7 +197,7 @@ export function App() {
   return (
     <div className="SystemDesigner">
       <h1 id ='title-text'> Fortress System Designer </h1>
-      <img src={fortressLogo} id="fortress-logo" alt="fortressLogo"/>
+      <img src={pvbattsLogo} id="pvbatts-logo" alt="pvbattsLogo"/>
       <button> Test </button>
       <div className= "module" id="module-kwh"> 
         <form className="form-inline">
