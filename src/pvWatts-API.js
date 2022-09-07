@@ -252,7 +252,7 @@ export function updateTableSubArrays(consumption) {
 export function updateMonthlyTable(monthIndex, data, averageConsumption) {
     var tableCells = document.getElementById('month-' + monthIndex).children;
     tableCells[1].innerHTML = Math.round(data['pvOutput']);
-    tableCells[2].innerHTML = Math.round(averageConsumption);
+    tableCells[2].innerHTML = tableCells[2].innerHTML || Math.round(averageConsumption);
     //Add event listener to change total when a month value is changed
     if (monthIndex != 'all') {
         tableCells[2].setAttribute('contenteditable',"true"); //Allow users to modify monthly consumption
